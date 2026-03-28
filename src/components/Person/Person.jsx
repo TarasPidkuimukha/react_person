@@ -1,4 +1,3 @@
-
 export const Person = ({ person }) => {
   const { name, age, sex, isMarried, partnerName } = person;
   let partnerText;
@@ -11,8 +10,9 @@ export const Person = ({ person }) => {
     partnerText = `${partnerName} is my husband`;
   }
 
-  const ageElement =
-    age !== undefined ? <p className="Person__age">I am {age}</p> : null;
+  const ageElement = age !== undefined ? (
+    <p className="Person__age">I am {age}</p>
+  ) : null;
 
   return (
     <div className="Person">
