@@ -14,7 +14,6 @@ export const Person = ({ person }) => {
     age !== undefined ?
     <p className="Person__age">I am {age}</p>
     : null;
-
   return (
     <div className="Person">
       <p className="Person__name">My name is {name}</p>
