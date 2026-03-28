@@ -11,8 +11,7 @@ export const Person = ({ person }) => {
   }
 
   const ageElement =
-    age !== undefined ? <p className="Person__age">I am {age}</p> :
-    null;
+    age !== undefined ? <p className="Person__age">I am {age}</p> : null;
 
   return (
     <div className="Person">
